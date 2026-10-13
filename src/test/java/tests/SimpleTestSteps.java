@@ -25,7 +25,7 @@ public class SimpleTestSteps {
 
     @Step("Перейти на страницу через результат поиска")
     public void redirectToResultPage(String resultLink) {
-        $(".search-modal__results").find("a[href=\"" + resultLink + "\"]").click();
+        $(".search-modal__results").find("a[href=\"/" + resultLink + "\"]").click();
     }
 
     @Step("Проверить текст заголовка")

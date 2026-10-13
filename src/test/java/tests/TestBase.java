@@ -13,6 +13,7 @@ public class TestBase {
     @BeforeAll
     static void setupSelenideEnv(){
         Configuration.baseUrl = "https://5e14.ttg.club/";
+        Configuration.pageLoadStrategy = "eager";
         Configuration.browser = testConfig.getBrowserName();
         Configuration.browserVersion = testConfig.getBrowserVersion();
         Configuration.browserSize = testConfig.getBrowserSize();
